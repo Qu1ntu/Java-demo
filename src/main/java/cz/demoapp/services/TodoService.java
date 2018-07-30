@@ -1,9 +1,15 @@
-package cz.demo.demo_app.services;
+package cz.demoapp.services;
 
 import java.util.Set;
 
-import cz.demo.demo_app.todo.domain.Todo;
+import cz.demoapp.todo.domain.Todo;
 
+/**
+ * 
+ * @author Quintus
+ *
+ * Service Interface
+ */
 public interface TodoService {
 	public Set<Todo> getAllTodos();
 	public Todo findById(Long Id);
