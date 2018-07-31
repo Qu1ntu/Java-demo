@@ -13,8 +13,8 @@ import cz.demoapp.services.TodoService;
  * 
  * @author Quintus
  *
- * Class that is responsible for mapping Thymeleaf templates to URL. Important part of Spring MVC.
- * Thymeleaf templates are the View.
+ * <p>Class that is responsible for mapping Thymeleaf templates to URL. Important part of Spring MVC.
+ * Thymeleaf templates are the View.</p>
  */
 
 @Controller

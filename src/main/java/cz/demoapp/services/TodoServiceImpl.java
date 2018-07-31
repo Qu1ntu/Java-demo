@@ -13,7 +13,7 @@ import cz.demoapp.todo.domain.Todo;
  * 
  * @author Quintus
  * 
- * Implementation of Service layer used in MainController class. Provides methods on repository.
+ * <p>Implementation of Service layer used in MainController class. Provides methods on repository.</p>
  */
 @Service
 public class TodoServiceImpl implements TodoService{

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
  * 
  * @author Quintus
  *
- * Class that applies default configuration for Spring boot.
+ * <p>Class that applies default configuration for Spring boot.</p>
  */
 @Configuration
 @EnableAutoConfiguration

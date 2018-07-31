@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.SequenceGenerator;
 
 import lombok.Data;
 
@@ -11,7 +12,7 @@ import lombok.Data;
  * 
  * @author Quintus
  *
- * Class that defines what shall be persisted in db - db schema. The state of Todo objects is the Model of MVC.
+ * <p>Class that defines what shall be persisted in db - db schema. The state of Todo objects is the Model of MVC.</p>
  */
 
 @Data
@@ -21,8 +22,9 @@ public class Todo {
 	 * unique identifier
 	 */
 	@Id
-	@GeneratedValue
-	Long id;
+	@SequenceGenerator(name = "todo_generator", sequenceName = "todo_sequence", allocationSize = 1)
+	@GeneratedValue(generator = "todo_generator")
+	Long Id;
 	
 	/**
 	 * Content, can be longer than 255 characters.

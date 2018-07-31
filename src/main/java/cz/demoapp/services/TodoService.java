@@ -8,7 +8,7 @@ import cz.demoapp.todo.domain.Todo;
  * 
  * @author Quintus
  *
- * Service Interface
+ * <p>Service Interface</p>
  */
 public interface TodoService {
 	/**
