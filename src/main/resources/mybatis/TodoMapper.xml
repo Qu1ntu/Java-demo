@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cz.demoapp.mappers.TodoMapper">
+  <select id="findAllTodos" resultType="cz.demoapp.todo.domain.Todo">
+    select * from TODOS
+  </select>
+  <insert id="insertTodo" useGeneratedKeys="true">
+  		INSERT INTO TODOS(description) VALUES(#{description})
+  	</insert>
+</mapper>

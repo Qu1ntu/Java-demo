@@ -7,7 +7,10 @@ import javax.persistence.Lob;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
@@ -19,6 +22,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="TODOS")
+@NoArgsConstructor
 public class Todo {
 	/**
 	 * unique identifier
@@ -32,13 +36,14 @@ public class Todo {
 	 */
 	@Lob
 	private String description;
-
-	public Todo(String description) {
+	
+	public Todo(String description){
 		this.description = description;
 	}
 	
-	public Todo(){
-		
+	public Todo(Long id, String description){
+		this.Id = id;
+		this.description = description;
 	}
 	
 	@Override
